@@ -1,10 +1,10 @@
 %-------------------------
 % Resume in Latex - Tailored for CloudSEK (DevOps Intern)
 % Author : Rithish S
-% Template based on: https://github.com/sb2nov/resume
+% Based off of: https://github.com/sb2nov/resume
 %------------------------
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,10.5pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -37,11 +37,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 %----------MARGINS----------
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.6in}
-\addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.25in}
 
 \urlstyle{same}
 \raggedbottom
@@ -50,20 +50,20 @@
 
 %----------SECTION FORMATTING----------
 \titleformat{\section}
-  {\vspace{-4pt}\scshape\raggedright\large\color{headingcolor}}
+  {\vspace{-2pt}\scshape\raggedright\large\color{headingcolor}}
   {}{0em}{}
-  [\color{headingcolor}\titlerule\vspace{-3pt}]
+  [\color{headingcolor}\titlerule\vspace{-2pt}]
 
 % Ensure machine-readable / ATS-parsable PDF
 \pdfgentounicode=1
 
 %----------CUSTOM COMMANDS----------
 \newcommand{\resumeItem}[1]{
-  \item\small{#1\vspace{-1.5pt}}
+  \item\small{#1\vspace{-1pt}}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small#4} \\
@@ -72,19 +72,19 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-  \vspace{-2pt}\item
+  \item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \small#1 & #2 \\
   \end{tabular*}
-  \vspace{-1pt}
+  \vspace{1pt}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1.5pt, parsep=0pt, topsep=2pt, partopsep=0pt]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, parsep=0pt, topsep=3pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
 
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, parsep=0pt, topsep=1pt, partopsep=0pt, leftmargin=0.16in]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1.5pt, parsep=0pt, topsep=2pt, partopsep=0pt, leftmargin=0.18in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
@@ -95,8 +95,8 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Rithish S} \\ \vspace{2pt}
-    {\small \textbf{\color{headingcolor}DevOps Intern $|$ Cloud Infrastructure, Kubernetes, Docker, Linux \& CI/CD Automation}} \\ \vspace{2pt}
+    \textbf{\Huge \scshape Rithish S} \\ \vspace{3pt}
+    {\small \textbf{\color{headingcolor}DevOps Intern $|$ Cloud Infrastructure, Kubernetes, Docker, Linux \& CI/CD}} \\ \vspace{3pt}
     \small
     \href{tel:+919952252304}{+91 99522 52304} $|$
     \href{mailto:rithishcodespace@gmail.com}{rithishcodespace@gmail.com} $|$
@@ -104,7 +104,7 @@
     \href{https://github.com/rithishcodespace}{GitHub} $|$
     \href{https://leetcode.com/rithishcodespace}{LeetCode}
 \end{center}
-\vspace{-8pt}
+\vspace{-6pt}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -117,21 +117,20 @@
     \small CGPA: \textbf{8.28/10} &
 \end{tabular*}
 \resumeSubHeadingListEnd
-\vspace{-4pt}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \vspace{-2pt}
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=0pt, topsep=1pt]
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1.5pt, parsep=0pt, topsep=2pt]
 \small{\item{
-\textbf{Cloud \& DevOps}{: Docker, Kubernetes, Prometheus, Grafana, AWS (EC2, S3, IAM, VPC), GitHub Actions, GitOps, Nginx} \\
+\textbf{Cloud \& DevOps}{: Docker, Kubernetes, Prometheus, Grafana, AWS (EC2, S3, IAM, VPC), GitHub Actions, Nginx} \\
 \textbf{Scripting \& Languages}{: Python, Bash/Shell, Go, TypeScript, JavaScript, SQL, C++, Java} \\
-\textbf{Distributed Systems}{: Redis (Distributed Queues \& Locks), BullMQ, REST APIs, Microservices, k6 (Load Testing)} \\
-\textbf{Core Systems \& Security}{: Linux (System Administration, POSIX), Computer Networks, AES-256-GCM Encryption, Git} \\
+\textbf{Distributed Systems \& Queues}{: Redis (Distributed Queues \& Locks), BullMQ, REST APIs, Microservices, k6} \\
+\textbf{Systems \& Security}{: Linux (System Administration, POSIX), Computer Networks (TCP/IP, DNS, TLS), AES-256-GCM, Git} \\
 \textbf{Certifications}{: AWS Cloud Practitioner Essentials, Oracle Cloud Foundations Associate, Cisco Linux Unhatched}
 }}
 \end{itemize}
-\vspace{-6pt}
+\vspace{-5pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -142,16 +141,15 @@
 {Students Special Group}{Student Organization}
 
 \resumeItemListStart
-    \resumeItem{Engineered full-stack internal management portals with React, Node.js, and MySQL, ensuring high availability, continuous workflow execution, and automated deployment pipelines for academic services.}
-    \resumeItem{Designed and implemented secure REST APIs and relational database models for a Faculty Dashboard, enforcing data validation, connection pooling, and optimized indexing for query throughput.}
-    \resumeItem{Mentored \textbf{50+ students} in Linux command-line environments, backend architecture, containerization principles, and software engineering best practices.}
+    \resumeItem{Engineered full-stack internal management portals with React, Node.js, and MySQL, ensuring high availability and automated workflows for faculty operations.}
+    \resumeItem{Designed and implemented secure REST APIs and normalized relational schemas for a Faculty Dashboard to optimize query throughput and data consistency.}
+    \resumeItem{Mentored \textbf{50+ students} in Linux command-line workflows, backend development, containerization, and software engineering best practices.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-4pt}
 
 %-----------PROJECTS-----------
-\section{DevOps \& Infrastructure Projects}
+\section{DevOps \& Cloud Projects}
 \resumeSubHeadingListStart
 
 %-----------DB BACKUP CLI-----------
@@ -161,38 +159,25 @@
 \href{https://github.com/rithishcodespace/db-backup-cli}{GitHub}}{}
 
 \resumeItemListStart
-    \resumeItem{Architected a disaster-recovery backup CLI published on npm and Docker Hub, featuring automated cron scheduling, gzip compression, SHA-256 checksum validation, and \textbf{120 passing automated tests} across PostgreSQL, MySQL, MongoDB, and SQLite.}
-    \resumeItem{Engineered a resilient distributed job-processing pipeline with Redis and BullMQ, implementing worker concurrency limits, automated failure retries, and job state persistence to scale infrastructure workloads reliably.}
-    \resumeItem{Integrated AES-256-GCM encryption, local key rotation, and Redis-based distributed locking to eliminate race conditions; engineered pluggable cloud storage providers for automated offloading to \textbf{AWS S3}.}
+    \resumeItem{Architected an automated disaster-recovery backup CLI published on npm and Docker Hub with \textbf{120 passing automated tests} across PostgreSQL, MySQL, MongoDB, and SQLite.}
+    \resumeItem{Designed a distributed job-processing system using Redis and BullMQ with configurable worker concurrency and queue limits to scale backup workloads reliably.}
+    \resumeItem{Implemented AES-256-GCM encryption, local key rotation, and Redis-based distributed locking; integrated cloud storage adapters for automated offloading to \textbf{AWS S3}.}
 \resumeItemListEnd
 
 %-----------K8S OBSERVABILITY-----------
 \resumeProjectHeading
-{\textbf{K8s Cluster Observability \& Monitoring} $|$
-\emph{Kubernetes, Docker, Prometheus, Grafana, Node.js, Linux}
+{\textbf{K8s Cluster Observability \& CI/CD} $|$
+\emph{Kubernetes, Docker, Prometheus, Grafana, GitHub Actions, Linux}
 \hfill
 \href{https://github.com/rithishcodespace/node-monitoring-k8s}{GitHub}}{}
 
 \resumeItemListStart
-    \resumeItem{Containerized microservices with Docker and deployed them to Kubernetes clusters using declarative \texttt{deployment.yaml} and \texttt{service.yaml} manifests for automated pod provisioning and service exposure.}
-    \resumeItem{Configured an end-to-end observability stack by deploying \textbf{Prometheus} scraping agents and \textbf{Grafana} visualization dashboards to monitor pod resource utilization, HTTP request latencies, and service error rates.}
-    \resumeItem{Configured container health probes (liveness/readiness), error budget alerts, and automated pod restarts to validate workload reliability and self-healing under simulated node failures.}
-\resumeItemListEnd
-
-%-----------CI/CD ORCHESTRATOR-----------
-\resumeProjectHeading
-{\textbf{Microservices CI/CD Orchestrator} $|$
-\emph{GitHub Actions, Kubernetes, Docker, Go, Python, GitOps}
-\hfill
-\href{https://github.com/rithishcodespace/microservices-ci-cd-orchestrator}{GitHub}}{}
-
-\resumeItemListStart
-    \resumeItem{Built an end-to-end CI/CD pipeline using GitHub Actions composite actions with dynamic test filtering, multi-language service builds (Go, Node, Python), and automated release management.}
-    \resumeItem{Engineered declarative Kubernetes manifests (\texttt{deploy/kubernetes/}) adopting GitOps principles to automate multi-service deployments, service routing, and container orchestration.}
+    \resumeItem{Containerized microservices with Docker and deployed them to Kubernetes clusters using declarative \texttt{deployment.yaml} and \texttt{service.yaml} manifests for automated pod provisioning.}
+    \resumeItem{Built an end-to-end observability pipeline deploying \textbf{Prometheus} metric scraping and \textbf{Grafana} dashboards to monitor pod health, request latencies, and cluster resource utilization.}
+    \resumeItem{Configured container health probes (liveness/readiness), automated pod self-healing, and GitHub Actions CI/CD workflows for automated build and test pipelines.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-4pt}
 
 %-----------OPEN SOURCE-----------
 \section{Open Source}
@@ -209,19 +194,18 @@
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-4pt}
 
-%-----------ACHIEVEMENTS & CERTIFICATIONS-----------
-\section{Achievements \& Certifications}
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
 \resumeItemListStart
 
     \resumeItem{\textbf{1200+ DSA Problems Solved} across LeetCode, CodeChef, and GeeksforGeeks, spanning arrays, graphs, trees, and dynamic programming.}
 
-    \resumeItem{\textbf{IEEE DevSpark Hackathon Winner} -- Secured \textbf{1st place among 120+ teams} in Full Stack Development by building \textbf{Plantera}, an AI-powered environmental monitoring application.}
+    \resumeItem{\textbf{IEEE DevSpark Hackathon Winner} -- Secured \textbf{1st place among 120+ teams} in Full Stack Development by building Plantera, an AI-powered environmental monitoring application.}
 
-    \resumeItem{\textbf{BIT Hackathon Winner} -- Secured \textbf{1st place among 200+ teams} by architecting a full-stack \textbf{Leave Management System} under hackathon time constraints.}
+    \resumeItem{\textbf{BIT Hackathon Winner} -- Secured \textbf{1st place among 200+ teams} by architecting a full-stack Leave Management System under hackathon time constraints.}
 
-    \resumeItem{\textbf{Cloud \& Linux Certifications} -- Certified in \textbf{AWS Cloud Practitioner Essentials}, \textbf{Oracle Cloud Infrastructure Foundations Associate} (2025), and \textbf{Cisco Linux Unhatched}.}
+    \resumeItem{\textbf{Official Cloud Certifications} -- Certified in \textbf{AWS Cloud Practitioner Essentials} and \textbf{Oracle Cloud Infrastructure Foundations Associate} (2025).}
 
 \resumeItemListEnd
 
