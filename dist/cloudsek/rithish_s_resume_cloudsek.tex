@@ -4,7 +4,7 @@
 % Based off of: https://github.com/sb2nov/resume
 %------------------------
 
-\documentclass[letterpaper,10.5pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -16,7 +16,10 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 
 %----------COLORS----------
 \definecolor{headingcolor}{RGB}{25,55,95}
@@ -50,12 +53,11 @@
 
 %----------SECTION FORMATTING----------
 \titleformat{\section}
-  {\vspace{-2pt}\scshape\raggedright\large\color{headingcolor}}
+  {\vspace{-3pt}\scshape\raggedright\large\color{headingcolor}}
   {}{0em}{}
   [\color{headingcolor}\titlerule\vspace{-2pt}]
 
-% Ensure machine-readable / ATS-parsable PDF
-\pdfgentounicode=1
+
 
 %----------CUSTOM COMMANDS----------
 \newcommand{\resumeItem}[1]{
@@ -68,7 +70,7 @@
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small#4} \\
   \end{tabular*}
-  \vspace{-3pt}
+  \vspace{-2pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -81,10 +83,10 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, parsep=0pt, topsep=3pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1.5pt, parsep=0pt, topsep=2pt, partopsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
 
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1.5pt, parsep=0pt, topsep=2pt, partopsep=0pt, leftmargin=0.18in]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, parsep=0pt, topsep=1.5pt, partopsep=0pt, leftmargin=0.18in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
@@ -95,8 +97,8 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Rithish S} \\ \vspace{3pt}
-    {\small \textbf{\color{headingcolor}DevOps Intern $|$ Cloud Infrastructure, Kubernetes, Docker, Linux \& CI/CD}} \\ \vspace{3pt}
+    \textbf{\Huge \scshape Rithish S} \\ \vspace{2pt}
+    {\small \textbf{\color{headingcolor}DevOps Intern $|$ Cloud Infrastructure, Kubernetes, Docker, Linux \& CI/CD}} \\ \vspace{2pt}
     \small
     \href{tel:+919952252304}{+91 99522 52304} $|$
     \href{mailto:rithishcodespace@gmail.com}{rithishcodespace@gmail.com} $|$
@@ -117,20 +119,20 @@
     \small CGPA: \textbf{8.28/10} &
 \end{tabular*}
 \resumeSubHeadingListEnd
+\vspace{-3pt}
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \vspace{-2pt}
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1.5pt, parsep=0pt, topsep=2pt]
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=0pt, topsep=1pt]
 \small{\item{
 \textbf{Cloud \& DevOps}{: Docker, Kubernetes, Prometheus, Grafana, AWS (EC2, S3, IAM, VPC), GitHub Actions, Nginx} \\
 \textbf{Scripting \& Languages}{: Python, Bash/Shell, Go, TypeScript, JavaScript, SQL, C++, Java} \\
-\textbf{Distributed Systems \& Queues}{: Redis (Distributed Queues \& Locks), BullMQ, REST APIs, Microservices, k6} \\
-\textbf{Systems \& Security}{: Linux (System Administration, POSIX), Computer Networks (TCP/IP, DNS, TLS), AES-256-GCM, Git} \\
-\textbf{Certifications}{: AWS Cloud Practitioner Essentials, Oracle Cloud Foundations Associate, Cisco Linux Unhatched}
+\textbf{Distributed Systems}{: Redis (Distributed Queues \& Locks), BullMQ, REST APIs, Microservices, k6 (Benchmarking)} \\
+\textbf{Systems \& Certifications}{: Linux (POSIX, CLI), Networks (DNS, TLS), AES-256-GCM, AWS Cloud Practitioner, Oracle Cloud Associate}
 }}
 \end{itemize}
-\vspace{-5pt}
+\vspace{-4pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -141,12 +143,12 @@
 {Students Special Group}{Student Organization}
 
 \resumeItemListStart
-    \resumeItem{Engineered full-stack internal management portals with React, Node.js, and MySQL, ensuring high availability and automated workflows for faculty operations.}
-    \resumeItem{Designed and implemented secure REST APIs and normalized relational schemas for a Faculty Dashboard to optimize query throughput and data consistency.}
-    \resumeItem{Mentored \textbf{50+ students} in Linux command-line workflows, backend development, containerization, and software engineering best practices.}
+    \resumeItem{Engineered full-stack management portals using React, Node.js, and MySQL, building secure REST APIs and indexed schemas for high availability and low query latency across faculty workflows.}
+    \resumeItem{Mentored \textbf{50+ students} in Linux command-line workflows, backend development patterns, containerization principles, and software engineering best practices.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+\vspace{-3pt}
 
 %-----------PROJECTS-----------
 \section{DevOps \& Cloud Projects}
@@ -159,9 +161,8 @@
 \href{https://github.com/rithishcodespace/db-backup-cli}{GitHub}}{}
 
 \resumeItemListStart
-    \resumeItem{Architected an automated disaster-recovery backup CLI published on npm and Docker Hub with \textbf{120 passing automated tests} across PostgreSQL, MySQL, MongoDB, and SQLite.}
-    \resumeItem{Designed a distributed job-processing system using Redis and BullMQ with configurable worker concurrency and queue limits to scale backup workloads reliably.}
-    \resumeItem{Implemented AES-256-GCM encryption, local key rotation, and Redis-based distributed locking; integrated cloud storage adapters for automated offloading to \textbf{AWS S3}.}
+    \resumeItem{Architected an automated disaster-recovery backup CLI published on npm and Docker Hub with \textbf{120 passing automated tests} across PostgreSQL, MySQL, MongoDB, and SQLite databases.}
+    \resumeItem{Engineered a resilient distributed job pipeline with Redis and BullMQ, implementing worker concurrency limits, automated failure retries, AES-256-GCM encryption, and automated offloading to \textbf{AWS S3}.}
 \resumeItemListEnd
 
 %-----------K8S OBSERVABILITY-----------
@@ -172,12 +173,12 @@
 \href{https://github.com/rithishcodespace/node-monitoring-k8s}{GitHub}}{}
 
 \resumeItemListStart
-    \resumeItem{Containerized microservices with Docker and deployed them to Kubernetes clusters using declarative \texttt{deployment.yaml} and \texttt{service.yaml} manifests for automated pod provisioning.}
-    \resumeItem{Built an end-to-end observability pipeline deploying \textbf{Prometheus} metric scraping and \textbf{Grafana} dashboards to monitor pod health, request latencies, and cluster resource utilization.}
-    \resumeItem{Configured container health probes (liveness/readiness), automated pod self-healing, and GitHub Actions CI/CD workflows for automated build and test pipelines.}
+    \resumeItem{Containerized microservices with Docker and deployed them to Kubernetes clusters using declarative \texttt{deployment.yaml} and \texttt{service.yaml} manifests for automated pod provisioning and service exposure.}
+    \resumeItem{Built an end-to-end observability stack with \textbf{Prometheus} metric scraping and \textbf{Grafana} dashboards to monitor pod health, request latencies, and self-healing under simulated node failures.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+\vspace{-3pt}
 
 %-----------OPEN SOURCE-----------
 \section{Open Source}
@@ -194,9 +195,10 @@
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+\vspace{-3pt}
 
 %-----------ACHIEVEMENTS-----------
-\section{Achievements}
+\section{Achievements \& Certifications}
 \resumeItemListStart
 
     \resumeItem{\textbf{1200+ DSA Problems Solved} across LeetCode, CodeChef, and GeeksforGeeks, spanning arrays, graphs, trees, and dynamic programming.}

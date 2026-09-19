@@ -154,14 +154,27 @@ def build_company(slug):
 
     # Page count check if PDF was compiled
     if compiled and os.path.exists(out_pdf):
-        with open(out_pdf, "rb") as f:
-            pdf_bytes = f.read()
-        pages = len(re.findall(rb'/Type\s*/Page\b', pdf_bytes))
+        pages = 0
+        pdfinfo_bin = shutil.which("pdfinfo")
+        if pdfinfo_bin:
+            try:
+                info_res = subprocess.run([pdfinfo_bin, out_pdf], capture_output=True, text=True)
+                for line in info_res.stdout.splitlines():
+                    if line.startswith("Pages:"):
+                        pages = int(line.split(":")[1].strip())
+                        break
+            except Exception:
+                pass
+        if pages == 0:
+            with open(out_pdf, "rb") as f:
+                pdf_bytes = f.read()
+            pages = len(re.findall(rb'/Type\s*/Page\b', pdf_bytes))
+
         print(f"[*] Exact Page Count: {pages} page(s)")
         if pages == 1:
             print("    [✓] STRICT 1-PAGE CONSTRAINT: PASSED")
         else:
-            print(f"    [!] WARNING: Resume is {pages} pages. Trim content to fit 1 page strictly!")
+            print(f"    [!] WARNING: Resume is {pages} page(s). Trim content to fit 1 page strictly!")
 
     # Write metadata.json
     meta = METADATA_TITLES.get(slug, {
