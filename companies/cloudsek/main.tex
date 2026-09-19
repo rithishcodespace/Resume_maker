@@ -90,13 +90,13 @@
 %-------------------------------------------
 %%%%%%  CUSTOM HOOK OVERRIDES (SET BY COMPANY)
 %-------------------------------------------
-\newcommand{\resumeSubtitle}{DevOps Intern | Cloud Infrastructure, Docker, Linux \& CI/CD Automation}
+\newcommand{\resumeSubtitle}{DevOps Intern | Cloud Infrastructure, Kubernetes, Docker, Linux \& CI/CD Automation}
 
 \newcommand{\customSkills}{%
-\textbf{Cloud \& DevOps}{: Docker, Kubernetes (Fundamentals), AWS (EC2, S3, IAM, VPC), GitHub Actions, CI/CD, Nginx} \vspace{1pt} \\
+\textbf{Cloud \& DevOps}{: Docker, Kubernetes, Prometheus, Grafana, AWS (EC2, S3, IAM, VPC), GitHub Actions, CI/CD, Nginx} \vspace{1pt} \\
 \textbf{Systems \& Scripting}{: Linux (System Administration, Bash), Python, TypeScript, JavaScript, SQL, C++, Java} \vspace{1pt} \\
 \textbf{Distributed Systems}{: Redis (Distributed Queues \& Locks), BullMQ, REST APIs, Fastify, Node.js} \vspace{1pt} \\
-\textbf{Databases \& Security}{: PostgreSQL, MySQL, MongoDB, SQLite, AES-256-GCM Encryption, Git, Prisma ORM}%
+\textbf{Certifications \& Security}{: AWS Cloud Practitioner, Oracle Cloud Associate, Cisco Linux, AES-256-GCM, Git}%
 }
 
 \newcommand{\customSSGBullets}{%
@@ -108,27 +108,27 @@
 \newcommand{\customProjectsList}{%
 %-----------DB BACKUP CLI-----------
 \resumeProjectHeading
-{\textbf{DB Backup CLI} $|$ \emph{TypeScript, Node.js, Redis, BullMQ, AWS S3, Docker}
+{\textbf{DB Backup CLI (DBVault)} $|$ \emph{TypeScript, Node.js, Redis, BullMQ, AWS S3, Docker}
 \hfill
 \href{https://github.com/rithishcodespace/db-backup-cli}{GitHub}}{}
 
 \resumeItemListStart
-    \resumeItem{Architected a cross-platform backup/restore CLI containerized with Docker, featuring automated scheduling, gzip compression, SHA-256 checksum verification, and multi-database dumps (PostgreSQL, MySQL, MongoDB, SQLite).}
+    \resumeItem{Architected a disaster-recovery backup CLI published on npm and Docker Hub, with automated scheduling, gzip compression, SHA-256 checksums, and 120 passing automated tests across PostgreSQL, MySQL, MongoDB, and SQLite.}
     \resumeItem{Engineered a resilient distributed job-processing pipeline with Redis and BullMQ, implementing worker concurrency limits, automated failure retries, and job state persistence to scale infrastructure workloads.}
-    \resumeItem{Integrated AES-256-GCM encryption, local key rotation, and Redis-based distributed locking to prevent race conditions; engineered pluggable storage adapters for automated offloading to AWS S3.}
+    \resumeItem{Integrated AES-256-GCM encryption, local key rotation, and Redis-based distributed locking to prevent race conditions; built pluggable storage adapters for automated offloading to AWS S3.}
 \resumeItemListEnd
 
-%-----------PATENTIQ-----------
+%-----------K8S OBSERVABILITY-----------
 \resumeProjectHeading
-{\textbf{PatentIQ $|$ AI Prior-Art \& RAG Engine} $|$
-\emph{Node.js, Fastify, Python, PostgreSQL, Pinecone, Ollama, Prisma}
+{\textbf{K8s Cluster Observability \& Monitoring} $|$
+\emph{Kubernetes, Docker, Prometheus, Grafana, Node.js, Linux}
 \hfill
-\href{https://github.com/rithishcodespace/PatentIQ}{GitHub}}{}
+\href{https://github.com/rithishcodespace/node-monitoring-k8s}{GitHub}}{}
 
 \resumeItemListStart
-    \resumeItem{Built a semantic search and retrieval service using Pinecone vector search and local embeddings to query and index high-dimensional document clusters reliably.}
-    \resumeItem{Developed an automated RAG-based analysis pipeline with Python and Qwen2.5 to execute claim-overlap analysis, technical risk assessments, and structured reporting.}
-    \resumeItem{Architected a Fastify and PostgreSQL service adhering to Clean Architecture, dependency injection, JWT authentication, Zod schema validation, and transactional persistence.}
+    \resumeItem{Engineered and containerized microservices with Docker, creating declarative Kubernetes \texttt{deployment.yaml} and \texttt{service.yaml} manifests for automated pod provisioning on Kubernetes.}
+    \resumeItem{Configured end-to-end observability pipelines by deploying \textbf{Prometheus} scraping agents and \textbf{Grafana} dashboards to monitor pod resource utilization, HTTP request latencies, and service health.}
+    \resumeItem{Configured container health probes (liveness/readiness), error budget alerts, and automated pod restarts to validate workload reliability and self-healing under simulated failures.}
 \resumeItemListEnd
 }
 

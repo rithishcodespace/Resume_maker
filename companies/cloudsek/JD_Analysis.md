@@ -33,16 +33,16 @@ CloudSEK is seeking a DevOps Intern to assist with cloud-native infrastructure, 
 | Requirement / Competency | Candidate Verified Evidence (Rithish S) | Alignment Status | Strategic Positioning |
 |---|---|---|---|
 | **Linux System Administration & Scripting** | Extensive Linux usage; Shell/Bash scripting, Python scripting, process management, POSIX environments. | 🟢 **Strong Match** | Feature prominently under **Technical Skills** and project CLI automation. |
-| **Containers & Containerization** | **Docker**: Containerized microservices, multi-container workflows, cross-platform CLI container packaging. | 🟢 **Strong Match** | Lead under DevOps skills and in **DB Backup CLI** bullets. |
-| **Cloud Infrastructure (AWS)** | **AWS S3, EC2**: Built pluggable S3 object storage adapters, bucket policies, IAM role integration. | 🟢 **Strong Match** | Emphasize AWS storage, EC2 deployments, and credential management. |
-| **CI/CD Pipelines & Test Automation** | **GitHub Actions**: Configured automated CI workflows; contributed to ESLint with **43 passing CI checks**. | 🟢 **Strong Match** | Feature in Open Source and Skills as continuous integration discipline. |
+| **Containers & Containerization** | **Docker**: Containerized microservices, multi-container workflows, cross-platform CLI container packaging (`dbvault` on Docker Hub). | 🟢 **Strong Match** | Lead under DevOps skills and in **DB Backup CLI** bullets. |
+| **Kubernetes & Cluster Deployments** | **`node-monitoring-k8s`**: Deployed Dockerized microservices to Kubernetes clusters using custom `deployment.yaml` and `service.yaml`. | 🟢 **Strong Match** | Featured as primary project evidence for Kubernetes deployment and pod lifecycle. |
+| **Observability (Prometheus & Grafana)** | **`node-monitoring-k8s`**: Configured Prometheus scraping agents and Grafana visualization dashboards to monitor pod metrics and request latencies. | 🟢 **Strong Match** | Directly fulfills CloudSEK's Tier 2 requirement without any exaggeration. |
+| **Cloud Infrastructure (AWS & Oracle)** | **AWS S3, EC2**: Built S3 object storage adapters, bucket policies. Certified: **AWS Cloud Practitioner Essentials** & **Oracle Cloud Foundations Associate**. | 🟢 **Strong Match** | Emphasize AWS storage, compute, and verified cloud certifications. |
+| **CI/CD Pipelines & Test Automation** | **GitHub Actions**: Configured automated CI workflows (`microservices-ci-cd-orchestrator`); ESLint with **43 passing CI checks**; **120 tests in DBVault**. | 🟢 **Strong Match** | Feature in Open Source and Skills as continuous integration discipline. |
 | **Security & Cryptography** | Implemented **AES-256-GCM encryption**, local key management, JWT authentication, and input sanitization. | 🟢 **Strong Match** | High cultural fit for CloudSEK (Cybersecurity product company). |
 | **Distributed Systems & Job Queues** | **Redis & BullMQ**: Distributed queue architecture, worker concurrency tuning, distributed locking. | 🟢 **Strong Match** | Directly supports CloudSEK's scalability & reliability responsibilities. |
-| **Kubernetes Fundamentals** | Container orchestration fundamentals, pod lifecycles, service networking, declarative manifests. | 🟡 **Partial Match** | Position as strong foundational knowledge backed by deep Docker & systems mastery. |
 | **Traffic Routing & Ingress (NGINX)** | NGINX reverse proxying, HTTP/REST routing rules, TLS configuration. | 🟡 **Partial Match** | Highlight reverse proxying, HTTP protocols, and networking fundamentals. |
-| **Observability (Prometheus, Grafana, Loki)** | Basic metric logging; no formal production Prometheus/Grafana stack in master portfolio. | 🔴 **Gap** | *Do NOT invent*. Highlight application logging, metadata tracking, and readiness to learn Prometheus. |
 | **Karpenter Autoscaling (NodePools, EC2NodeClass)** | No prior hands-on exposure to Karpenter in verified portfolio. | 🔴 **Gap** | *Do NOT invent*. Acknowledge as growth area while demonstrating strong AWS EC2 and workload scaling understanding. |
-| **GitOps (ArgoCD) / Jenkins** | Uses GitHub Actions for CI/CD; no production ArgoCD or Jenkins in verified portfolio. | 🔴 **Gap** | Highlight Git-based version control, CI/CD automation principles, and declarative configuration. |
+| **GitOps (ArgoCD)** | Forked/studied ArgoCD; built GitHub Actions K8s GitOps-style orchestrator; no multi-cluster production ArgoCD. | 🟡 **Partial Match** | Highlight declarative GitOps Kubernetes manifests and CI/CD pipelines. |
 
 ---
 

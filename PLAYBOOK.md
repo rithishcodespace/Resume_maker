@@ -148,25 +148,44 @@ $$\text{Accomplished } [X] \text{ as measured by } [Y] \text{ by doing } [Z]$$
     - Full-stack Project Management Portal (React, Node.js, MySQL).
     - REST APIs and relational database models for Faculty Reward Points Dashboard.
     - Mentored **50+ students** in JavaScript, backend development, and software engineering best practices.
-- **Verified Projects Pool:**
-  1. **DB Backup CLI** (*TypeScript, Node.js, Redis, BullMQ, AWS S3, Docker*):
-     - Cross-platform backup/restore CLI for PostgreSQL, MySQL, MongoDB, and SQLite.
-     - Automated scheduling, compression, checksum verification, and metadata management.
-     - Distributed job-processing with Redis and BullMQ (configurable worker concurrency, queue limits).
-     - AES-256-GCM encryption, local key management, Redis-based distributed locking, pluggable local/AWS S3 storage.
-  2. **PatentIQ | AI Prior-Art & RAG Engine** (*Node.js, Fastify, Python, PostgreSQL, Pinecone, Ollama, Prisma*):
-     - Semantic prior-art search engine using Pinecone vector search and local LLM embeddings.
-     - RAG-based patentability analysis pipeline with Qwen2.5 for claim-overlap analysis, technical risk assessments, and novelty reports.
-     - Fastify + Prisma/PostgreSQL backend using Clean Architecture, dependency injection, JWT auth, Zod validation, transactional persistence.
-  3. **Plantera** (*AI Sustainability & Environmental Monitoring*):
-     - Built for IEEE DevSpark Hackathon.
-     - Secured **1st place among 120+ teams** in Full Stack Development.
-  4. **Leave Management System**:
-     - Built for BIT Hackathon under time constraints.
-     - Secured **1st place among 200+ teams**.
-  5. **CampusMitra**:
-     - Academic and administrative workflow automation platform.
-     - Ranked in the **top 10 of 150+ teams** at SNS Ideathon.
+- **Verified Projects Pool (Directly from github.com/rithishcodespace):**
+  1. **DB Backup CLI (DBVault)** (*TypeScript, Node.js, Redis, BullMQ, AWS S3, Docker*):
+     - Published to npm as `dbvault` and Docker Hub as `rithish2006/dbvault`.
+     - **120 automated tests passed**.
+     - Point-In-Time Recovery (PITR), cross-platform backup/restore for PostgreSQL, MySQL, MongoDB, SQLite.
+     - Distributed job-processing with Redis & BullMQ (worker concurrency, queue limits, scheduler execution guards).
+     - AES-256-GCM encryption, local key rotation, Redis-based distributed locking, automated S3 upload.
+  2. **PatentIQ | AI Prior-Art & Novelty Engine** (*Node.js, Fastify, Python, PostgreSQL, Pinecone, Ollama, Prisma*):
+     - Semantic prior-art search using Pinecone vector similarity and local LLM embeddings.
+     - RAG patentability analysis pipeline with Qwen2.5 for claim-overlap analysis and technical risk scoring.
+     - Fastify & Prisma/PostgreSQL backend using Clean Architecture, dependency injection, JWT auth, Zod validation.
+  3. **Node & Kubernetes Observability (`node-monitoring-k8s`)** (*Kubernetes, Docker, Prometheus, Grafana, Node.js*):
+     - Dockerized microservice deployed to Kubernetes (Minikube) with custom `deployment.yaml` and `service.yaml`.
+     - Monitored real-time application and cluster metrics via dedicated **Prometheus and Grafana** pods.
+  4. **Microservices CI/CD Orchestrator** (*GitHub Actions, Kubernetes, Go, Node.js, Python, React*):
+     - End-to-end CI/CD orchestration for multi-language microservices using GitHub Actions composite actions.
+     - Integrated GitOps-style Kubernetes manifests (`deploy/kubernetes/`), automated testing, and release management.
+  5. **Humming Tone** (*TypeScript, Node.js, Express.js, PostgreSQL, Redis, Docker, AWS*):
+     - Production-ready e-commerce platform built for a freelance client.
+     - Secure authentication, RBAC, Redis caching, modular services, payment gateway integration, admin dashboard.
+  6. **Plantera** (*React, Node.js, Express, Python, Mapbox, Tailwind CSS, Machine Learning*):
+     - Real-time environmental monitoring platform for deforestation detection using satellite imagery and ML.
+     - **1st place among 120+ teams** at IEEE DevSpark Hackathon (₹10,000 cash prize).
+  7. **RAGForge & DocuRAG** (*Python, LangChain, ChromaDB, Embeddings, LLMs*):
+     - Retrieval-Augmented Generation pipeline using recursive chunking, embeddings, ChromaDB, similarity search.
+  8. **DevTinder & NetflixGPT** (*React, Redux Toolkit, Node.js, MongoDB / Firebase, TMDB API, OpenAI API*):
+     - Full-stack developer networking platform (JWT, REST APIs) and AI-powered movie recommendation engine.
+  9. **Leave Management System (LeaveMate)**:
+     - Full-stack leave workflow system built under time constraints; **1st place among 200+ teams** at BIT Hackathon.
+  10. **CampusMitra**: Academic workflow platform; **Top 10 among 150+ teams** at SNS Ideathon.
+
+- **Official Certifications:**
+  - **Oracle Cloud Infrastructure 2025 Certified Foundations Associate** (Oracle University, Credential: `103056584OCI25FNDCFA`, Oct 2025)
+  - **AWS Cloud Practitioner Essentials** (AWS Training & Certification, Credential: `AWS-TRAINING-CERT`, July 2026)
+  - **The Joy of Computing using Python — ELITE + TOPPER (TOP 5%)** (NPTEL, IIT Madras / Govt. of India, 95% score, Credential: `NPTEL26CS84S454501242`)
+  - **Cisco Networking Academy | NDG:** Linux Unhatched (`CISCO-NDG-LINUX`)
+  - **Cisco Networking Academy:** Operating Systems Basics (`CISCO-OS-BASICS`)
+  - **Cisco Networking Academy | JS Institute:** JavaScript Essentials 1 (`CISCO-JS-ESS-1`)
 
 ---
 
