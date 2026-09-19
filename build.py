@@ -24,11 +24,11 @@ APPLICATIONS_FILE = os.path.join(ROOT_DIR, "APPLICATIONS.md")
 
 # Registry of company application metadata
 METADATA_TITLES = {
-    # e.g., "google": {
-    #     "title": "Google - Software Engineering Intern",
-    #     "description": "Targeting distributed systems, backend services, and high-concurrency queues.",
-    #     "badge": "Distributed Systems"
-    # }
+    "cloudsek": {
+        "title": "CloudSEK - DevOps Intern",
+        "description": "DevOps internship targeting Linux, Docker, Kubernetes fundamentals, AWS, CI/CD automation, and infrastructure security.",
+        "badge": "DevOps & Cloud Infra"
+    }
 }
 
 def find_tex_compiler():

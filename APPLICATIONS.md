@@ -4,6 +4,7 @@ This ledger tracks all targeted roles, company dossiers, and compilation statuse
 
 | Company Slug | Target Role / Title | Dossier Path | Status | Last Updated |
 |---|---|---|---|---|
+| `cloudsek` | CloudSEK - DevOps Intern | [dist/cloudsek/](dist/cloudsek/) | Ready / Dossier Built | 2026-09-19 |
 
 ---
 

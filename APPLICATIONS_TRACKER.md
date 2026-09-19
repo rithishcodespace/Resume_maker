@@ -8,7 +8,7 @@ This tracker monitors all targeted roles, custom ATS-optimized resumes, keyword 
 
 | # | Company | Role | Type (Intern / Full-Time) | Folder Path | Match Score | Status | Last Updated |
 |---|---------|------|---------------------------|-------------|-------------|--------|--------------|
-| - | *(No active applications yet)* | - | - | - | - | Ready for 1st Role | - |
+| 1 | **CloudSEK** | DevOps Intern | Internship | [dist/cloudsek/](dist/cloudsek/) | ~82% Alignment | 📝 Dossier Ready | 2026-09-19 |
 
 ---
 

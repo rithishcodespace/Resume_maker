@@ -1,0 +1,14 @@
+========================================
+APPLICATION DOSSIER: CLOUDSEK
+========================================
+Candidate:    Rithish S
+Role/Target:  CloudSEK - DevOps Intern
+Date:         2026-09-19 12:26:05
+Status:       LaTeX Ready
+Dossier Path: dist/cloudsek/
+
+Contents:
+  1. rithish_s_resume_cloudsek.tex (Tailored LaTeX Source)
+  2. rithish_s_resume_cloudsek.pdf (Pending Local/Overleaf Compile)
+  3. metadata.json (Application tracking details)
+========================================
