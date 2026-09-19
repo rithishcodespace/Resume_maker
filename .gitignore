@@ -1,0 +1,25 @@
+# LaTeX Auxiliary & Build Files
+*.aux
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.nav
+*.snm
+*.vrb
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+
+# Archives & Binaries
+bin/
+*.tar.gz
+*.zip

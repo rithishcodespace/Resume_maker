@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex - Modular Template for Rithish S
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{etoolbox}
+\input{glyphtounicode}
+
+%----------COLORS----------
+\definecolor{headingcolor}{RGB}{25,55,95}
+\definecolor{linkcolor}{RGB}{0,90,160}
+
+\usepackage[
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=linkcolor
+]{hyperref}
+
+%----------PAGE STYLE----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------SECTION FORMATTING----------
+\titleformat{\section}
+  {\vspace{-2pt}\scshape\raggedright\large\color{headingcolor}}
+  {}{0em}{}
+  [\color{headingcolor}\titlerule\vspace{-2pt}]
+
+% Ensure machine-readable / ATS-parsable PDF
+\pdfgentounicode=1
+
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-1pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small#4} \\
+  \end{tabular*}
+  \vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}
+  \vspace{1pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, parsep=0pt, topsep=3pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1.5pt, parsep=0pt, topsep=2pt, partopsep=0pt, leftmargin=0.18in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  CUSTOM HOOK OVERRIDES (SET BY COMPANY)
+%-------------------------------------------
+% \newcommand{\resumeSubtitle}{Backend Engineer Intern | Distributed Systems, Cloud \& APIs}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Rithish S} \\ \vspace{3pt}
+    \ifdef{\resumeSubtitle}{{\small \textbf{\color{headingcolor}\resumeSubtitle}} \\ \vspace{2pt}}{}
+    \small
+    \href{tel:+919952252304}{+91 99522 52304} $|$
+    \href{mailto:rithishcodespace@gmail.com}{rithishcodespace@gmail.com} $|$
+    \href{https://www.linkedin.com/in/rithish-saravanan-32a39431a/}{LinkedIn} $|$
+    \href{https://github.com/rithishcodespace}{GitHub} $|$
+    \href{https://leetcode.com/rithishcodespace}{LeetCode}
+\end{center}
+\vspace{-5pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Bannari Amman Institute of Technology} & Sathyamangalam, Tamil Nadu \\
+    \textit{\small Bachelor of Engineering in Computer Science and Engineering}
+    & \textit{\small Aug. 2024 -- May 2028} \\
+    \small CGPA: \textbf{8.28/10} &
+\end{tabular*}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\vspace{-2pt}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=0pt, topsep=2pt]
+\small{\item{
+\ifdef{\customSkills}{\customSkills}{%
+\textbf{Languages}{: Java, C++, Python, JavaScript, TypeScript, SQL} \\
+\textbf{Computer Science}{: Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, Distributed Systems} \\
+\textbf{Frontend}{: React, Tailwind CSS} \\
+\textbf{Backend}{: Node.js, Express.js, Fastify, REST APIs} \\
+\textbf{Databases}{: PostgreSQL, MySQL, MongoDB, SQLite, Redis} \\
+\textbf{Cloud \& DevOps}{: AWS, Docker, Kubernetes, GitHub Actions} \\
+\textbf{Tools}{: Git, Linux, Prisma ORM}%
+}
+}}
+\end{itemize}
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Web Developer}{Feb. 2025 -- Dec. 2025}
+{Students Special Group}{Student Organization}
+
+\resumeItemListStart
+\ifdef{\customSSGBullets}{\customSSGBullets}{%
+    \resumeItem{Engineered a full-stack \textbf{Project Management Portal} with React, Node.js, and MySQL to track faculty projects, tasks, and workflow progress.}
+    \resumeItem{Designed and implemented REST APIs and relational database models for a \textbf{Faculty Reward Points Dashboard} to track contributions and activities.}
+    \resumeItem{Mentored \textbf{50+ students} in JavaScript, backend development, and software engineering best practices.}
+}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\ifdef{\customProjectsList}{\customProjectsList}{%
+%-----------DB BACKUP CLI-----------
+\resumeProjectHeading
+{\textbf{DB Backup CLI} $|$ \emph{TypeScript, Node.js, Redis, BullMQ, AWS S3, Docker}
+\hfill
+\href{https://github.com/rithishcodespace/db-backup-cli}{GitHub}}{}
+
+\resumeItemListStart
+    \resumeItem{Architected a cross-platform backup/restore CLI for PostgreSQL, MySQL, MongoDB, and SQLite with automated scheduling, compression, checksum verification, and metadata management.}
+    \resumeItem{Designed a distributed job-processing system using Redis and BullMQ with configurable worker concurrency and queue limits to scale backup workloads reliably.}
+    \resumeItem{Implemented AES-256-GCM encryption, local key management, and Redis-based distributed locking; built pluggable local/AWS S3 storage providers for scalability.}
+\resumeItemListEnd
+
+%-----------PATENTIQ-----------
+\resumeProjectHeading
+{\textbf{PatentIQ $|$ AI Prior-Art \& RAG Engine} $|$
+\emph{Node.js, Fastify, Python, PostgreSQL, Pinecone, Ollama, Prisma}
+\hfill
+\href{https://github.com/rithishcodespace/PatentIQ}{GitHub}}{}
+
+\resumeItemListStart
+    \resumeItem{Built a semantic prior-art search engine using Pinecone vector search and local LLM embeddings to retrieve technically relevant patent claims from large document sets.}
+    \resumeItem{Developed a RAG-based patentability analysis pipeline with Qwen2.5 to generate claim-overlap analysis, technical risk assessments, and novelty reports.}
+    \resumeItem{Architected a Fastify and Prisma/PostgreSQL backend using Clean Architecture, dependency injection, JWT authentication, Zod validation, and transactional persistence.}
+\resumeItemListEnd
+}
+
+\resumeSubHeadingListEnd
+
+%-----------OPEN SOURCE-----------
+\section{Open Source}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{ESLint} $|$ \emph{JavaScript, AST, Static Analysis, IEEE 754}
+\hfill
+\href{https://github.com/eslint/eslint/pull/21218}{PR \#21218}}{}
+
+\resumeItemListStart
+    \resumeItem{Contributed a merged fix to ESLint's \texttt{no-loss-of-precision} rule, correctly distinguishing genuine zero literals from non-zero decimals that underflow under IEEE 754 binary64.}
+    \resumeItem{Added regression tests covering underflow, subnormal values, signed zero, and non-decimal literals; passed 43 CI checks before merge into a major open-source codebase.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeItemListStart
+\ifdef{\customAchievements}{\customAchievements}{%
+    \resumeItem{\textbf{1200+ DSA Problems Solved} across LeetCode, CodeChef, and GeeksforGeeks, spanning arrays, graphs, trees, and dynamic programming.}
+    \resumeItem{\textbf{IEEE DevSpark Hackathon Winner} -- Secured \textbf{1st place among 120+ teams} in Full Stack Development by building \textbf{Plantera}, an AI-powered sustainability and environmental monitoring application.}
+    \resumeItem{\textbf{BIT Hackathon Winner} -- Secured \textbf{1st place among 200+ teams} by architecting a full-stack \textbf{Leave Management System} under hackathon time constraints.}
+    \resumeItem{\textbf{SNS Ideathon Top 10} -- Ranked among the \textbf{top 10 of 150+ teams} by developing \textbf{CampusMitra}, a platform streamlining academic and administrative workflows.}
+}
+\resumeItemListEnd
+
+\end{document}
