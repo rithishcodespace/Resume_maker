@@ -16,7 +16,9 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{etoolbox}
-\input{glyphtounicode}
+\ifx\XeTeXversion\undefined
+  \input{glyphtounicode}
+\fi
 
 %----------COLORS----------
 \definecolor{headingcolor}{RGB}{25,55,95}
@@ -55,7 +57,9 @@
   [\color{headingcolor}\titlerule\vspace{-2pt}]
 
 % Ensure machine-readable / ATS-parsable PDF
-\pdfgentounicode=1
+\ifx\XeTeXversion\undefined
+  \pdfgentounicode=1
+\fi
 
 %----------CUSTOM COMMANDS----------
 \newcommand{\resumeItem}[1]{

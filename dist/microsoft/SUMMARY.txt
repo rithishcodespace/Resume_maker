@@ -1,0 +1,14 @@
+========================================
+APPLICATION DOSSIER: MICROSOFT
+========================================
+Candidate:    Rithish S
+Role/Target:  Microsoft - Software Engineering Intern
+Date:         2026-09-20 21:06:29
+Status:       PDF Compiled
+Dossier Path: dist/microsoft/
+
+Contents:
+  1. rithish_s_resume_microsoft.tex (Tailored LaTeX Source)
+  2. rithish_s_resume_microsoft.pdf (Generated)
+  3. metadata.json (Application tracking details)
+========================================

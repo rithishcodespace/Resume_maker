@@ -28,6 +28,11 @@ METADATA_TITLES = {
         "title": "CloudSEK - DevOps Intern",
         "description": "DevOps internship targeting Linux, Docker, Kubernetes fundamentals, AWS, CI/CD automation, and infrastructure security.",
         "badge": "DevOps & Cloud Infra"
+    },
+    "microsoft": {
+        "title": "Microsoft - Software Engineering Intern",
+        "description": "Software Engineering internship targeting algorithms, distributed systems, OOP, cloud services, and production software quality.",
+        "badge": "Software Engineering & Distributed Systems"
     }
 }
 
@@ -238,7 +243,14 @@ def update_applications_tracker(slug, meta):
             new_lines.append(line)
     
     if not updated:
-        new_lines.append(entry_line)
+        # Insert entry right after table header or last table row
+        insert_idx = len(new_lines)
+        for i, line in enumerate(new_lines):
+            if line.startswith("|---|"):
+                insert_idx = i + 1
+            elif line.startswith("| `") and insert_idx <= i + 1:
+                insert_idx = i + 1
+        new_lines.insert(insert_idx, entry_line)
 
     with open(APPLICATIONS_FILE, "w", encoding="utf-8") as f:
         f.writelines(new_lines)

@@ -1,5 +1,5 @@
 %-------------------------
-% Resume in Latex - Tailored for CloudSEK (DevOps Intern)
+% Resume in Latex - Tailored for Microsoft (Software Engineering Intern)
 % Author : Rithish S
 % Based off of: https://github.com/sb2nov/resume
 %------------------------
@@ -39,11 +39,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 %----------MARGINS----------
-\addtolength{\oddsidemargin}{-0.55in}
-\addtolength{\evensidemargin}{-0.55in}
-\addtolength{\textwidth}{1.1in}
-\addtolength{\topmargin}{-.6in}
-\addtolength{\textheight}{1.25in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.32in}
 
 \urlstyle{same}
 \raggedbottom
@@ -101,7 +101,6 @@
 \vspace{-2pt}
 }
 
-% Reduced spacing slightly to keep the final line on page 1
 \newcommand{\resumeItemListStart}{
 \begin{itemize}[
     itemsep=1pt,
@@ -126,7 +125,7 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Rithish S} \\ \vspace{3pt}
-    {\small \textbf{\color{headingcolor}DevOps Intern $|$ Cloud Infrastructure, Kubernetes, Docker, Linux \& CI/CD}} \\ \vspace{3pt}
+    {\small \textbf{\color{headingcolor}Software Engineering Intern $|$ Distributed Systems, Algorithms \& Cloud Services}} \\ \vspace{3pt}
     \small
     \href{tel:+919952252304}{+91 99522 52304} $|$
     \href{mailto:rithishcodespace@gmail.com}{rithishcodespace@gmail.com} $|$
@@ -166,11 +165,11 @@
 ]
 
 \small{\item{
-\textbf{Cloud \& DevOps}{: Docker, Kubernetes, Prometheus, Grafana, AWS (EC2, S3, IAM, VPC), GitHub Actions, Nginx} \\
-\textbf{Scripting \& Languages}{: Python, Bash/Shell, Go, TypeScript, JavaScript, SQL, C++, Java} \\
-\textbf{Distributed Systems \& Queues}{: Redis (Distributed Queues \& Locks), BullMQ, REST APIs, Microservices, k6} \\
-\textbf{Systems \& Security}{: Linux (System Administration, POSIX), Computer Networks (TCP/IP, DNS, TLS), AES-256-GCM, Git} \\
-\textbf{Certifications}{: AWS Cloud Practitioner Essentials, Oracle Cloud Foundations Associate, Cisco Linux Unhatched}
+\textbf{Languages}{: C++, Java, Python, TypeScript, JavaScript, SQL, Go} \\
+\textbf{Computer Science}{: Data Structures \& Algorithms, OOP, Operating Systems, DBMS, Networks, Distributed Systems} \\
+\textbf{Backend \& Systems}{: Node.js, Fastify, Express.js, REST APIs, Redis (Distributed Queues \& Locks), BullMQ, Microservices, k6} \\
+\textbf{Databases \& Cloud}{: PostgreSQL, MySQL, MongoDB, SQLite, Pinecone, AWS (EC2, S3), Docker, Linux (POSIX), Git, CI/CD} \\
+\textbf{Certifications}{: AWS Cloud Practitioner, Oracle Cloud Foundations Associate, Cisco OS \& Linux, NPTEL Python (Top 5\%)}
 }}
 
 \end{itemize}
@@ -188,18 +187,18 @@
 
 \resumeItemListStart
 
-    \resumeItem{Engineered full-stack internal management portals with React, Node.js, and MySQL, ensuring high availability and automated workflows for faculty operations.}
+    \resumeItem{Engineered full-stack internal management portals with React, Node.js, and MySQL, implementing normalized relational schemas and role-based workflows for institutional operations.}
 
-    \resumeItem{Designed and implemented secure REST APIs and normalized relational schemas for a Faculty Dashboard to optimize query throughput and data consistency.}
+    \resumeItem{Designed and deployed high-throughput REST APIs for a Faculty Dashboard, optimizing SQL queries, indexing, and transactional integrity across high-frequency academic updates.}
 
-    \resumeItem{Mentored \textbf{50+ students} in Linux command-line workflows, backend development, containerization, and software engineering best practices.}
+    \resumeItem{Mentored \textbf{50+ students} in Data Structures \& Algorithms, backend architecture, version control workflows, and software engineering design patterns.}
 
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\section{DevOps \& Cloud Projects}
+\section{Software Engineering Projects}
 
 \resumeSubHeadingListStart
 
@@ -211,28 +210,28 @@
 
 \resumeItemListStart
 
-    \resumeItem{Architected an automated disaster-recovery backup CLI published on npm and Docker Hub with \textbf{120 passing automated tests} across PostgreSQL, MySQL, MongoDB, and SQLite.}
+    \resumeItem{Architected an automated multi-engine backup/restore CLI published on npm and Docker Hub with \textbf{120 automated tests} supporting PostgreSQL, MySQL, MongoDB, and SQLite.}
 
-    \resumeItem{Designed a distributed job-processing system using Redis and BullMQ with configurable worker concurrency and queue limits to scale backup workloads reliably.}
+    \resumeItem{Designed a distributed asynchronous job processing pipeline using Redis and BullMQ, implementing worker concurrency control, queue rate-limiting, and distributed locking.}
 
-    \resumeItem{Implemented AES-256-GCM encryption, local key rotation, and Redis-based distributed locking; integrated cloud storage adapters for automated offloading to \textbf{AWS S3}.}
+    \resumeItem{Implemented AES-256-GCM authenticated encryption with local key rotation, stream-based compression, and automated cloud offloading via \textbf{AWS S3} object storage adapters.}
 
 \resumeItemListEnd
 
-%-----------K8S OBSERVABILITY-----------
+%-----------PATENTIQ-----------
 \resumeProjectHeading
-{\textbf{K8s Cluster Observability \& CI/CD} $|$
-\emph{Kubernetes, Docker, Prometheus, Grafana, GitHub Actions, Linux}
+{\textbf{PatentIQ $|$ AI Prior-Art \& RAG Engine} $|$
+\emph{Node.js, Fastify, Python, PostgreSQL, Pinecone, Prisma}
 \hfill
-\href{https://github.com/rithishcodespace/node-monitoring-k8s}{GitHub}}{}
+\href{https://github.com/rithishcodespace/PatentIQ}{GitHub}}{}
 
 \resumeItemListStart
 
-    \resumeItem{Containerized microservices with Docker and deployed them to Kubernetes clusters using declarative \texttt{deployment.yaml} and \texttt{service.yaml} manifests for automated pod provisioning.}
+    \resumeItem{Engineered a semantic prior-art discovery engine utilizing Pinecone vector search and LLM embeddings to retrieve patent claims from high-dimensional vector spaces.}
 
-    \resumeItem{Built an end-to-end observability pipeline deploying \textbf{Prometheus} metric scraping and \textbf{Grafana} dashboards to monitor pod health, request latencies, and cluster resource utilization.}
+    \resumeItem{Developed a RAG pipeline leveraging Qwen2.5 for automated patent claim-overlap analysis, technical novelty scoring, and contextual risk evaluation.}
 
-    \resumeItem{Configured container health probes (liveness/readiness), automated pod self-healing, and GitHub Actions CI/CD workflows for automated build and test pipelines.}
+    \resumeItem{Architected a modular Fastify backend using Clean Architecture, dependency injection, Prisma ORM, PostgreSQL transactional persistence, and Zod schema validation.}
 
 \resumeItemListEnd
 
@@ -250,9 +249,9 @@
 
 \resumeItemListStart
 
-    \resumeItem{Contributed a merged fix to ESLint's \texttt{no-loss-of-precision} rule, distinguishing genuine zero literals from non-zero decimals that underflow under IEEE 754 binary64.}
+    \resumeItem{Contributed a merged bug fix to ESLint's \texttt{no-loss-of-precision} static analysis rule, correctly differentiating true zero literals from non-zero values underflowing IEEE 754 binary64 precision.}
 
-    \resumeItem{Added regression tests covering underflow, subnormal values, signed zero, and non-decimal literals; passed \textbf{43 CI checks} before merge into a major open-source codebase.}
+    \resumeItem{Authored comprehensive unit and regression tests covering numeric underflow, subnormal IEEE 754 boundaries, and signed zero; successfully passed \textbf{43 CI validation checks}.}
 
 \resumeItemListEnd
 
@@ -263,13 +262,13 @@
 
 \resumeItemListStart
 
-    \resumeItem{\textbf{1200+ DSA Problems Solved} across LeetCode, CodeChef, and GeeksforGeeks, spanning arrays, graphs, trees, and dynamic programming.}
+    \resumeItem{\textbf{1200+ Algorithmic Problems Solved} across LeetCode, CodeChef, and GeeksforGeeks, demonstrating advanced proficiency in Dynamic Programming, Graph Theory, Trees, and Greedy Algorithms.}
 
-    \resumeItem{\textbf{IEEE DevSpark Hackathon Winner} -- Secured \textbf{1st place among 120+ teams} in Full Stack Development by building Plantera, an AI-powered environmental monitoring application.}
+    \resumeItem{\textbf{IEEE DevSpark Hackathon Winner} -- Secured \textbf{1st place among 120+ teams} in Full Stack Development by architecting Plantera, an AI-powered environmental monitoring platform.}
 
-    \resumeItem{\textbf{BIT Hackathon Winner} -- Secured \textbf{1st place among 200+ teams} by architecting a full-stack Leave Management System under hackathon time constraints.}
+    \resumeItem{\textbf{BIT Hackathon Winner} -- Secured \textbf{1st place among 200+ teams} by engineering a full-stack Leave Management System under strict 24-hour hackathon constraints.}
 
-    \resumeItem{\textbf{Official Cloud Certifications} -- Certified in \textbf{AWS Cloud Practitioner Essentials} and \textbf{Oracle Cloud Infrastructure Foundations Associate} (2025).}
+    \resumeItem{\textbf{NPTEL Elite + Topper (Top 5\%)} -- Scored 95\% in The Joy of Computing using Python (IIT Madras); certified in AWS Cloud Practitioner and Oracle Cloud Foundations Associate.}
 
 \resumeItemListEnd
 

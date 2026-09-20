@@ -2,8 +2,8 @@
   "title": "CloudSEK - DevOps Intern",
   "description": "DevOps internship targeting Linux, Docker, Kubernetes fundamentals, AWS, CI/CD automation, and infrastructure security.",
   "badge": "DevOps & Cloud Infra",
-  "last_built": "2026-09-19 12:46:16",
+  "last_built": "2026-09-20 21:06:30",
   "slug": "cloudsek",
-  "estimated_char_count": 2085,
+  "estimated_char_count": 2101,
   "compiled": true
 }
