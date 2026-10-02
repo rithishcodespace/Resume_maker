@@ -1,0 +1,102 @@
+%-------------------------
+% Cover Letter in Latex - Tailored for ClickPost (AI Engineer Intern)
+% Author : Rithish S
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{parskip}
+
+\ifx\XeTeXversion\undefined
+  \input{glyphtounicode}
+\fi
+
+%----------COLORS----------
+\definecolor{headingcolor}{RGB}{25,55,95}
+\definecolor{linkcolor}{RGB}{0,90,160}
+
+\usepackage[
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=linkcolor
+]{hyperref}
+
+%----------PAGE STYLE----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\ifx\XeTeXversion\undefined
+  \pdfgentounicode=1
+\fi
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\textbf{\Huge \scshape Rithish S}} \\ \vspace{3pt}
+    {\small \textbf{\color{headingcolor}AI Engineer Intern $|$ Autonomous AI Agents (MCP), LLMs/RAG \& Scalable Systems}} \\ \vspace{3pt}
+    \small
+    \href{tel:+919952252304}{+91 99522 52304} $|$
+    \href{mailto:rithishcodespace@gmail.com}{rithishcodespace@gmail.com} $|$
+    \href{https://www.linkedin.com/in/rithish-saravanan-32a39431a/}{LinkedIn} $|$
+    \href{https://github.com/rithishcodespace}{GitHub} $|$
+    \href{https://leetcode.com/rithishcodespace}{LeetCode}
+\end{center}
+
+\vspace{-4pt}
+\hrule height 0.5pt \relax
+\vspace{8pt}
+
+\textbf{October 2, 2026}
+
+\vspace{2pt}
+Product \& AI Engineering Recruitment Team \\
+\textbf{ClickPost Technologies} \\
+Bangalore, Karnataka, India \\
+
+\vspace{3pt}
+\textbf{Subject: Application for AI Engineer - Internship Position}
+
+\vspace{3pt}
+Dear ClickPost AI \& Product Engineering Team,
+
+ClickPost's mission as the post-purchase intelligence platform turning logistics complexity into a competitive advantage for 450+ global retailers---processing 50M+ shipments monthly across 600+ carriers while building the enterprise agentic layer for exception resolution, voice agents, and lost sale recovery---represents the exact caliber of high-scale, applied AI engineering I aspire to build. As a Computer Science and Engineering undergraduate at Bannari Amman Institute of Technology (CGPA: 8.28/10), I am eager to join ClickPost in Bangalore as an AI Engineer Intern to turn AI prototypes, internal automations, and LLM experiments into production services.
+
+My engineering experience directly aligns with ClickPost's stack and focus areas. In architecting \textbf{PatentIQ}, I engineered an \textbf{autonomous AI agent} workflow leveraging the \textbf{Model Context Protocol (MCP)} and dynamic \textbf{tool calling}, dynamically orchestrating vector retrieval tools, patent claim parsers, and external research APIs. Furthermore, I built a low-latency \textbf{RAG} pipeline utilizing local \textbf{LLMs (Qwen2.5 via Ollama)} and Pinecone vector embeddings to automate unstructured text analysis, semantic claim overlap, and quantitative risk scoring, backed by a Clean Architecture Fastify/PostgreSQL backend with strict schema validation. Complementing this, in \textbf{DB Backup CLI (DBVault)}---published to npm and Docker Hub with \textbf{120 automated tests}---I engineered distributed job scheduling using \textbf{Redis and BullMQ}, enforcing worker concurrency, rate-limits, and Redis-based distributed locking to guarantee zero data loss.
+
+ClickPost's culture of ownership, speed, and continuous learning strongly mirrors my software craftsmanship. In my merged contribution to \textbf{ESLint Core (PR \#21218)}, I resolved intricate IEEE 754 binary64 floating-point underflow edge cases in AST static analysis, authoring comprehensive regression test suites that passed \textbf{43 automated CI verification checks}. Backing this rigor, I have solved \textbf{1200+ algorithmic problems} across LeetCode, CodeChef, and GeeksforGeeks, and hold verified credentials including IIT Madras / NPTEL's \textit{The Joy of Computing using Python} (\textbf{Elite + Topper, Top 5\%, 95\% score}), \textbf{Oracle Cloud Certified Foundations Associate}, and \textbf{AWS Cloud Practitioner Essentials}. As a Web Developer with Students Special Group, I built full-stack portals and faculty analytics dashboards while mentoring \textbf{50+ students}.
+
+I am passionate about shipping applied AI that solves messy real-world problems. I would welcome the opportunity to build ClickPost MCP servers, develop operational AI copilots, design rigorous evals, and deploy reliable LLM decision-making workflows at logistics scale. Thank you for your time, consideration, and review of my application.
+
+\vspace{10pt}
+Sincerely, \\ \vspace{2pt}
+\textbf{Rithish S} \\
+\href{mailto:rithishcodespace@gmail.com}{rithishcodespace@gmail.com} $|$ +91 99522 52304
+
+\end{document}

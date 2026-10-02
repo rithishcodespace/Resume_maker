@@ -1,0 +1,277 @@
+%-------------------------
+% Resume in Latex - Tailored for Flam (Software Engineering Intern)
+% Author : Rithish S
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifx\XeTeXversion\undefined
+  \input{glyphtounicode}
+\fi
+
+%----------COLORS----------
+\definecolor{headingcolor}{RGB}{25,55,95}
+\definecolor{linkcolor}{RGB}{0,90,160}
+
+\usepackage[
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=linkcolor
+]{hyperref}
+
+%----------PAGE STYLE----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.32in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------SECTION FORMATTING----------
+\titleformat{\section}
+  {\vspace{-2pt}\scshape\raggedright\large\color{headingcolor}}
+  {}{0em}{}
+  [\color{headingcolor}\titlerule\vspace{-2pt}]
+
+% Ensure machine-readable / ATS-parsable PDF
+\ifx\XeTeXversion\undefined
+  \pdfgentounicode=1
+\fi
+
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-1pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small#4} \\
+  \end{tabular*}
+  \vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}
+  \vspace{1pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[
+    leftmargin=0.15in,
+    label={},
+    itemsep=2pt,
+    parsep=0pt,
+    topsep=3pt,
+    partopsep=0pt
+]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}
+\vspace{-2pt}
+}
+
+\newcommand{\resumeItemListStart}{
+\begin{itemize}[
+    itemsep=1pt,
+    parsep=0pt,
+    topsep=1pt,
+    partopsep=0pt,
+    leftmargin=0.18in
+]
+}
+
+\newcommand{\resumeItemListEnd}{
+\end{itemize}
+\vspace{-2pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Rithish S} \\ \vspace{3pt}
+    {\small \textbf{\color{headingcolor}Software Engineering Intern $|$ Frontend Architecture (React/Next.js), Interactive WebGL/Canvas \& GenAI Systems}} \\ \vspace{3pt}
+    \small
+    \href{tel:+919952252304}{+91 99522 52304} $|$
+    \href{mailto:rithishcodespace@gmail.com}{rithishcodespace@gmail.com} $|$
+    \href{https://www.linkedin.com/in/rithish-saravanan-32a39431a/}{LinkedIn} $|$
+    \href{https://github.com/rithishcodespace}{GitHub} $|$
+    \href{https://leetcode.com/rithishcodespace}{LeetCode}
+\end{center}
+
+\vspace{-6pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\resumeSubHeadingListStart
+
+\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Bannari Amman Institute of Technology} & Sathyamangalam, Tamil Nadu \\
+    \textit{\small Bachelor of Engineering in Computer Science and Engineering}
+    & \textit{\small Aug. 2024 -- May 2028} \\
+    \small CGPA: \textbf{8.28/10} &
+\end{tabular*}
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+
+\vspace{-2pt}
+
+\begin{itemize}[
+    leftmargin=0.15in,
+    label={},
+    itemsep=1pt,
+    parsep=0pt,
+    topsep=1pt
+]
+
+\small{\item{
+\textbf{Frontend \& UI}{: React, Next.js, TypeScript, JavaScript (ES6+), HTML5 Canvas, WebGL, Tailwind CSS, Redux Toolkit} \\
+\textbf{Languages \& Core CS}{: Python, C++, Java, SQL, Object-Oriented Design (OOP), Data Structures \& Algorithms} \\
+\textbf{Backend \& APIs}{: Node.js, Fastify, Express.js, REST APIs, Microservices, Redis Caching, k6 Performance Testing} \\
+\textbf{AI \& Cloud Systems}{: Generative AI, RAG Pipelines, Vector Search (Pinecone), AWS (EC2, S3), Docker, Linux (POSIX), Git} \\
+\textbf{Certifications}{: AWS Cloud Practitioner Essentials, Oracle Cloud Foundations Associate, Cisco Linux \& OS}
+}}
+
+\end{itemize}
+
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Web Developer}{Feb. 2025 -- Dec. 2025}
+{Students Special Group}{Student Organization}
+
+\resumeItemListStart
+
+    \resumeItem{Engineered modular full-stack web applications using \textbf{React, Node.js, and MySQL}, architecting reusable UI component hierarchies and responsive state management across institutional platforms.}
+
+    \resumeItem{Designed and integrated high-throughput REST APIs and normalized relational schemas for a Faculty Dashboard, ensuring sub-second response times and transactional consistency.}
+
+    \resumeItem{Mentored \textbf{50+ students} in modern JavaScript (ES6+), React component design patterns, Git workflows, and front-end performance best practices.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Featured Projects}
+
+\resumeSubHeadingListStart
+
+%-----------PLANTERA-----------
+\resumeProjectHeading
+{\textbf{Plantera $|$ Interactive AI \& WebGL Spatial Platform} $|$
+\emph{React, Mapbox GL / WebGL, Python, Node.js, Tailwind CSS}
+\hfill
+\href{https://github.com/rithishcodespace}{GitHub}}{}
+
+\resumeItemListStart
+
+    \resumeItem{Architected an interactive geospatial monitoring application using \textbf{React and Mapbox GL}, utilizing \textbf{hardware-accelerated WebGL vector rendering} and \textbf{HTML5 Canvas} overlays for real-time visualization.}
+
+    \resumeItem{Built modular, reusable UI components and custom interactive controls, achieving fluid 60fps pan/zoom interactions and responsive client-side state synchronization across diverse viewports.}
+
+    \resumeItem{Integrated backend machine learning prediction pipelines with REST APIs; awarded \textbf{1st place among 120+ teams} at the IEEE DevSpark Hackathon.}
+
+\resumeItemListEnd
+
+%-----------PATENTIQ-----------
+\resumeProjectHeading
+{\textbf{PatentIQ $|$ AI Prior-Art \& Novelty Engine} $|$
+\emph{Node.js, Fastify, Python, PostgreSQL, Pinecone, Ollama, Prisma}
+\hfill
+\href{https://github.com/rithishcodespace/PatentIQ}{GitHub}}{}
+
+\resumeItemListStart
+
+    \resumeItem{Engineered an AI-native novelty search engine using Pinecone vector similarity search and local LLM embeddings (Qwen2.5) for automated claim-overlap analysis and technical risk scoring.}
+
+    \resumeItem{Architected a high-throughput Fastify backend utilizing Clean Architecture, dependency injection, and Prisma/PostgreSQL, optimizing API response latencies for complex analytical queries.}
+
+    \resumeItem{Implemented JWT authentication, Zod schema validation, and secure transactional pipelines handling multi-step analysis workflows.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------OPEN SOURCE-----------
+\section{Open Source}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{ESLint} $|$ \emph{JavaScript, AST, Static Analysis, IEEE 754, CI/CD}
+\hfill
+\href{https://github.com/eslint/eslint/pull/21218}{PR \#21218}}{}
+
+\resumeItemListStart
+
+    \resumeItem{Contributed a merged fix to ESLint's \texttt{no-loss-of-precision} rule, distinguishing genuine zero literals from non-zero decimals that underflow under IEEE 754 binary64 floating-point specifications.}
+
+    \resumeItem{Authored a comprehensive regression test suite covering underflow, subnormal values, signed zero, and non-decimal literals; passed \textbf{43 automated CI checks} prior to production merge.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+
+\resumeItemListStart
+
+    \resumeItem{\textbf{1200+ DSA Problems Solved} across LeetCode, CodeChef, and GeeksforGeeks, spanning dynamic programming, graphs, trees, and algorithmic complexity.}
+
+    \resumeItem{\textbf{IEEE DevSpark Hackathon Winner} -- Secured \textbf{1st place among 120+ teams} in Full Stack Development by building Plantera, an AI-powered interactive environmental monitoring platform.}
+
+    \resumeItem{\textbf{BIT Hackathon Winner} -- Secured \textbf{1st place among 200+ teams} by architecting a full-stack Leave Management System under hackathon time constraints.}
+
+    \resumeItem{\textbf{Official Cloud Certifications} -- Certified in \textbf{AWS Cloud Practitioner Essentials} and \textbf{Oracle Cloud Infrastructure Foundations Associate} (2025).}
+
+\resumeItemListEnd
+
+%-------------------------------------------
+\end{document}

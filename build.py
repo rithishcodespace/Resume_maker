@@ -33,6 +33,21 @@ METADATA_TITLES = {
         "title": "Microsoft - Software Engineering Intern",
         "description": "Software Engineering internship targeting algorithms, distributed systems, OOP, cloud services, and production software quality.",
         "badge": "Software Engineering & Distributed Systems"
+    },
+    "flam": {
+        "title": "Flam - Software Engineering Intern",
+        "description": "Software Engineering internship targeting React/Next.js frontend architecture, WebGL/Canvas interactive rendering, and GenAI API systems.",
+        "badge": "Frontend & Interactive 3D / GenAI"
+    },
+    "honeywell": {
+        "title": "Honeywell - Engineering Intern",
+        "description": "Engineering internship targeting software engineering, data analysis, systems reliability, core CS fundamentals, and cross-functional project collaboration.",
+        "badge": "Software Engineering & Data Analysis"
+    },
+    "clickpost": {
+        "title": "ClickPost - AI Engineer Intern",
+        "description": "AI Engineer internship targeting autonomous AI agents, Model Context Protocol (MCP), tool calling, RAG pipelines, vector search, Python/FastAPI backend, Redis queues, and production AI workflows.",
+        "badge": "AI Engineering & Autonomous Agents"
     }
 }
 
@@ -180,6 +195,52 @@ def build_company(slug):
             print("    [✓] STRICT 1-PAGE CONSTRAINT: PASSED")
         else:
             print(f"    [!] WARNING: Resume is {pages} page(s). Trim content to fit 1 page strictly!")
+
+    # Check for cover_letter.tex
+    cover_tex_file = os.path.join(company_dir, "cover_letter.tex")
+    has_cover = os.path.exists(cover_tex_file)
+    cover_compiled = False
+    if has_cover:
+        dst_cover_tex = os.path.join(out_dir, f"rithish_s_cover_letter_{slug}.tex")
+        shutil.copy2(cover_tex_file, dst_cover_tex)
+        out_cover_pdf = os.path.join(out_dir, f"rithish_s_cover_letter_{slug}.pdf")
+        if compiler:
+            print(f"[*] Compiling {cover_tex_file} using {compiler}...")
+            if "tectonic" in compiler:
+                c_cmd = [compiler, cover_tex_file, "--outdir", out_dir]
+                c_res = subprocess.run(c_cmd, capture_output=True, text=True)
+                if c_res.returncode == 0:
+                    gen_cover_pdf = os.path.join(out_dir, "cover_letter.pdf")
+                    if os.path.exists(gen_cover_pdf):
+                        os.replace(gen_cover_pdf, out_cover_pdf)
+                    cover_compiled = True
+            else:
+                c_cmd = [compiler, "-interaction=nonstopmode", f"-output-directory={out_dir}", cover_tex_file]
+                c_res = subprocess.run(c_cmd, capture_output=True, text=True)
+                if c_res.returncode == 0:
+                    gen_cover_pdf = os.path.join(out_dir, "cover_letter.pdf")
+                    if os.path.exists(gen_cover_pdf):
+                        os.replace(gen_cover_pdf, out_cover_pdf)
+                    cover_compiled = True
+            c_pages = 0
+            if pdfinfo_bin and os.path.exists(out_cover_pdf):
+                try:
+                    c_info_res = subprocess.run([pdfinfo_bin, out_cover_pdf], capture_output=True, text=True)
+                    for line in c_info_res.stdout.splitlines():
+                        if line.startswith("Pages:"):
+                            c_pages = int(line.split(":")[1].strip())
+                            break
+                except Exception:
+                    pass
+            if c_pages == 0 and os.path.exists(out_cover_pdf):
+                with open(out_cover_pdf, "rb") as f:
+                    c_bytes = f.read()
+                c_pages = len(re.findall(rb'/Type\s*/Page\b', c_bytes))
+            print(f"[*] Cover Letter Page Count: {c_pages} page(s)")
+            if c_pages == 1:
+                print("    [✓] COVER LETTER 1-PAGE CONSTRAINT: PASSED")
+            else:
+                print(f"    [!] WARNING: Cover letter is {c_pages} page(s). Trim content to fit 1 page strictly!")
 
     # Write metadata.json
     meta = METADATA_TITLES.get(slug, {

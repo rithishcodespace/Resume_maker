@@ -1,0 +1,14 @@
+========================================
+APPLICATION DOSSIER: CLICKPOST
+========================================
+Candidate:    Rithish S
+Role/Target:  ClickPost - AI Engineer Intern
+Date:         2026-10-02 16:48:29
+Status:       PDF Compiled
+Dossier Path: dist/clickpost/
+
+Contents:
+  1. rithish_s_resume_clickpost.tex (Tailored LaTeX Source)
+  2. rithish_s_resume_clickpost.pdf (Generated)
+  3. metadata.json (Application tracking details)
+========================================

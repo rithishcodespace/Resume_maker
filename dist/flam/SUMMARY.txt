@@ -1,0 +1,14 @@
+========================================
+APPLICATION DOSSIER: FLAM
+========================================
+Candidate:    Rithish S
+Role/Target:  Flam - Software Engineering Intern
+Date:         2026-10-02 16:48:53
+Status:       PDF Compiled
+Dossier Path: dist/flam/
+
+Contents:
+  1. rithish_s_resume_flam.tex (Tailored LaTeX Source)
+  2. rithish_s_resume_flam.pdf (Generated)
+  3. metadata.json (Application tracking details)
+========================================
