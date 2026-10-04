@@ -2,7 +2,7 @@
   "title": "ClickPost - AI Engineer Intern",
   "description": "AI Engineer internship targeting autonomous AI agents, Model Context Protocol (MCP), tool calling, RAG pipelines, vector search, Python/FastAPI backend, Redis queues, and production AI workflows.",
   "badge": "AI Engineering & Autonomous Agents",
-  "last_built": "2026-10-02 16:48:29",
+  "last_built": "2026-10-04 09:58:42",
   "slug": "clickpost",
   "estimated_char_count": 2832,
   "compiled": true

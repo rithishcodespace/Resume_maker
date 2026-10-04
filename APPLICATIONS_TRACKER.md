@@ -13,6 +13,7 @@ This tracker monitors all targeted roles, custom ATS-optimized resumes, keyword 
 | 3 | **Flam** | Software Engineering Intern | Internship | [dist/flam/](dist/flam/) | ~85% Alignment | 📝 Dossier Ready | 2026-09-22 |
 | 4 | **Honeywell** | Engineering Intern | Internship | [dist/honeywell/](dist/honeywell/) | ~88% Alignment | 📝 Dossier Ready | 2026-10-01 |
 | 5 | **ClickPost** | AI Engineer Intern | Internship | [dist/clickpost/](dist/clickpost/) | ~94% Alignment | 📝 Dossier Ready | 2026-10-02 |
+| 6 | **HackerRank** | Software Development Engineer Intern | Internship | [dist/hackerrank/](dist/hackerrank/) | ~96% Alignment | 📝 Dossier Ready | 2026-10-04 |
 
 ---
 

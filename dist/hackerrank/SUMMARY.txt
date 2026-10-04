@@ -1,0 +1,14 @@
+========================================
+APPLICATION DOSSIER: HACKERRANK
+========================================
+Candidate:    Rithish S
+Role/Target:  HackerRank - Software Development Engineer Intern
+Date:         2026-10-04 10:02:14
+Status:       PDF Compiled
+Dossier Path: dist/hackerrank/
+
+Contents:
+  1. rithish_s_resume_hackerrank.tex (Tailored LaTeX Source)
+  2. rithish_s_resume_hackerrank.pdf (Generated)
+  3. metadata.json (Application tracking details)
+========================================

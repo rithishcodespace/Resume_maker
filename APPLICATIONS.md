@@ -8,7 +8,8 @@ This ledger tracks all targeted roles, company dossiers, and compilation statuse
 | `microsoft` | Microsoft - Software Engineering Intern | [dist/microsoft/](dist/microsoft/) | Ready / Dossier Built | 2026-09-20 |
 | `flam` | Flam - Software Engineering Intern | [dist/flam/](dist/flam/) | Ready / Dossier Built | 2026-10-02 |
 | `honeywell` | Honeywell - Engineering Intern | [dist/honeywell/](dist/honeywell/) | Ready / Dossier Built | 2026-10-02 |
-| `clickpost` | ClickPost - AI Engineer Intern | [dist/clickpost/](dist/clickpost/) | Ready / Dossier Built | 2026-10-02 |
+| `clickpost` | ClickPost - AI Engineer Intern | [dist/clickpost/](dist/clickpost/) | Ready / Dossier Built | 2026-10-04 |
+| `hackerrank` | HackerRank - Software Development Engineer Intern | [dist/hackerrank/](dist/hackerrank/) | Ready / Dossier Built | 2026-10-04 |
 
 ---
 

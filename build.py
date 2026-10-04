@@ -48,6 +48,11 @@ METADATA_TITLES = {
         "title": "ClickPost - AI Engineer Intern",
         "description": "AI Engineer internship targeting autonomous AI agents, Model Context Protocol (MCP), tool calling, RAG pipelines, vector search, Python/FastAPI backend, Redis queues, and production AI workflows.",
         "badge": "AI Engineering & Autonomous Agents"
+    },
+    "hackerrank": {
+        "title": "HackerRank - Software Development Engineer Intern",
+        "description": "Software Development Engineer internship targeting developer tooling, AST static analysis, AI agents (MCP/RAG), scalable backend services, and high-standard production software engineering.",
+        "badge": "Software Engineering & AI Systems"
     }
 }
 
