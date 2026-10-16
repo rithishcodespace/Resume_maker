@@ -1,0 +1,14 @@
+========================================
+APPLICATION DOSSIER: AMAZON
+========================================
+Candidate:    Rithish S
+Role/Target:  Amazon - Programmer Analyst Intern (2027)
+Date:         2026-10-04 10:48:57
+Status:       PDF Compiled
+Dossier Path: dist/amazon/
+
+Contents:
+  1. rithish_s_resume_amazon.tex (Tailored LaTeX Source)
+  2. rithish_s_resume_amazon.pdf (Generated)
+  3. metadata.json (Application tracking details)
+========================================

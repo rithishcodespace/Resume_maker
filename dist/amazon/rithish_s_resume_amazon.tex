@@ -1,0 +1,274 @@
+%-------------------------
+% Resume in Latex - Amazon Programmer Analyst Intern
+% Author: Rithish S
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\ifx\XeTeXversion\undefined
+  \input{glyphtounicode}
+\fi
+
+%----------COLORS----------
+\definecolor{headingcolor}{RGB}{25,55,95}
+\definecolor{linkcolor}{RGB}{0,90,160}
+
+\usepackage[
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=linkcolor
+]{hyperref}
+
+%----------PAGE STYLE----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.72in}
+\addtolength{\textheight}{1.42in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------SECTION FORMATTING----------
+\titleformat{\section}
+  {\vspace{-4pt}\scshape\raggedright\large\color{headingcolor}}
+  {}{0em}{}
+  [\color{headingcolor}\titlerule\vspace{-3pt}]
+
+%----------ATS----------
+\ifx\XeTeXversion\undefined
+  \pdfgentounicode=1
+\fi
+
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-1pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small#4} \\
+  \end{tabular*}
+  \vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}
+  \vspace{1pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[
+    leftmargin=0.15in,
+    label={},
+    itemsep=1.5pt,
+    parsep=0pt,
+    topsep=1.5pt,
+    partopsep=0pt
+]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}
+\vspace{-3pt}
+}
+
+\newcommand{\resumeItemListStart}{
+\begin{itemize}[
+    itemsep=0.6pt,
+    parsep=0pt,
+    topsep=1pt,
+    partopsep=0pt,
+    leftmargin=0.18in
+]
+}
+
+\newcommand{\resumeItemListEnd}{
+\end{itemize}
+\vspace{-2pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Rithish S} \\ \vspace{2pt}
+    {\small \textbf{\color{headingcolor}Programmer Analyst Intern $|$ CS Fundamentals, AWS (S3, DynamoDB, EC2), Schedulers \& Workflows}} \\ \vspace{2pt}
+    \small
+    \href{tel:+919952252304}{+91 99522 52304} $|$
+    \href{mailto:rithishcodespace@gmail.com}{rithishcodespace@gmail.com} $|$
+    \href{https://www.linkedin.com/in/rithish-saravanan-32a39431a/}{LinkedIn} $|$
+    \href{https://github.com/rithishcodespace}{GitHub} $|$
+    \href{https://leetcode.com/rithishcodespace}{LeetCode}
+\end{center}
+
+\vspace{-7pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\resumeSubHeadingListStart
+
+\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Bannari Amman Institute of Technology} & Sathyamangalam, Tamil Nadu \\
+    \textit{\small Bachelor of Engineering in Computer Science and Engineering}
+    & \textit{\small Aug. 2024 -- May 2028} \\
+    \small CGPA: \textbf{8.28/10} &
+\end{tabular*}
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+
+\vspace{-2pt}
+
+\begin{itemize}[
+    leftmargin=0.15in,
+    label={},
+    itemsep=1pt,
+    parsep=0pt,
+    topsep=1pt
+]
+
+\small{\item{
+\textbf{Languages}{: Java, C++, Python, SQL, JavaScript, TypeScript} \\
+\textbf{Computer Science}{: Data Structures \& Algorithms, Object-Oriented Programming (OOP), DBMS, Operating Systems, Computer Networks} \\
+\textbf{Cloud \& AWS}{: AWS (S3, DynamoDB, EC2), Docker, Kubernetes, Linux/POSIX, Git, GitHub Actions, CI/CD} \\
+\textbf{Web Services \& Architecture}{: REST APIs, Microservices, Schedulers, Background Workflows, State Machines, Node.js, Fastify, Clean Architecture} \\
+\textbf{Databases}{: PostgreSQL, MySQL, DynamoDB, Redis, Prisma ORM} \\
+\textbf{Testing \& Quality}{: Automated Unit Testing, Integration Testing, System Troubleshooting, Debugging, Regression Testing}
+}}
+
+\end{itemize}
+
+\vspace{-5pt}
+
+%-----------OPEN SOURCE-----------
+\section{Open Source}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{ESLint Core} $|$ \emph{JavaScript, AST, Static Analysis, Troubleshooting}
+\hfill
+\href{https://github.com/eslint/eslint/pull/21218}{PR \#21218}}{}
+
+\resumeItemListStart
+
+    \resumeItem{Diagnosed and resolved a subtle floating-point precision bug in ESLint's \texttt{no-loss-of-precision} static analysis rule, correctly distinguishing literal zero values from decimal numbers that underflow under IEEE 754 binary64 specifications.}
+
+    \resumeItem{Interpreted complex AST codebase with minimal guidance; engineered comprehensive regression test suites covering signed zero, subnormal values, and non-decimals, passing \textbf{43 automated CI verification checks} prior to production merge.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+%-----------DB BACKUP CLI-----------
+\resumeProjectHeading
+{\textbf{DBVault -- Database Backup \& Scheduler Tool} $|$ \emph{TypeScript, Node.js, Redis, BullMQ, AWS S3, Docker}
+\hfill
+\href{https://github.com/rithishcodespace/db-backup-cli}{GitHub}}{}
+
+\resumeItemListStart
+
+    \resumeItem{Engineered a database backup, restore, and scheduling tool supporting \textbf{PostgreSQL, MySQL, MongoDB, and SQLite} with automated cron scheduling, stream compression, and SHA-256 integrity validation.}
+
+    \resumeItem{Designed resilient background workflows and job state machines with \textbf{Redis and BullMQ}, implementing worker concurrency, rate limiting, exponential backoff retries, and distributed locking to prevent duplicate execution.}
+
+    \resumeItem{Built pluggable storage adapters for automated offloading to \textbf{AWS S3} object storage and AES-256-GCM encryption; authored \textbf{120+ automated unit and integration tests} validating high reliability and zero data corruption.}
+
+\resumeItemListEnd
+
+%-----------PATENTIQ-----------
+\resumeProjectHeading
+{\textbf{PatentIQ -- AI Research \& Service Integration} $|$ \emph{Python, Node.js, Fastify, PostgreSQL, REST APIs, Redis}
+\hfill
+\href{https://github.com/rithishcodespace/PatentIQ}{GitHub}}{}
+
+\resumeItemListStart
+
+    \resumeItem{Developed an automated research service utilizing \textbf{multi-step workflows, tool state machines, and REST APIs} to extract, analyze, and synthesize technical patent claims from unstructured document repositories.}
+
+    \resumeItem{Built a modular \textbf{Fastify and PostgreSQL} backend utilizing Clean Architecture, dependency injection, and schema validation to orchestrate service-level integrations across vector search indices and processing endpoints.}
+
+    \resumeItem{Optimized query workflows and caching layers with Redis, reducing latency for complex claim-overlap analysis while preserving modularity for future service integrations and internal tooling.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Web Developer -- Internal Systems}{Feb. 2025 -- Dec. 2025}
+{Students Special Group}{Student Organization}
+
+\resumeItemListStart
+
+    \resumeItem{Built and maintained an internal \textbf{Project Management Portal} (React, Node.js, MySQL) used across departments to automate task assignment, track milestones, and eliminate manual spreadsheet tracking.}
+
+    \resumeItem{Acted as a \textbf{liaison between academic stakeholders and developers} to elicit, analyze, and validate functional requirements for a \textbf{Faculty Reward Points System}, designing relational schemas and reporting APIs.}
+
+    \resumeItem{Investigated and debugged system bottlenecks across database queries and API endpoints; mentored \textbf{50+ junior developers} in software design principles, unit testing, and Git version control.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Certifications}
+
+\resumeItemListStart
+
+    \resumeItem{\textbf{1200+ DSA Problems Solved} across LeetCode, CodeChef, and GeeksforGeeks, demonstrating mastery in algorithms, data structures, and computational problem-solving.}
+
+    \resumeItem{\textbf{Certifications}: \textbf{AWS Cloud Practitioner Essentials} (AWS Cloud Architecture, S3, EC2, DynamoDB), \textbf{Oracle Cloud Infrastructure (OCI 2025 Associate)}, \textbf{NPTEL Python} (Elite + Topper, Top 5\%, 95\%).}
+
+    \resumeItem{\textbf{IEEE DevSpark Hackathon -- 1st Place} among 120+ teams for architecting \textbf{Plantera}, an automated environmental data monitoring system.}
+
+    \resumeItem{\textbf{BIT Hackathon -- 1st Place} among 200+ teams by delivering a full-stack \textbf{Leave Management System} under rapid development constraints.}
+
+\resumeItemListEnd
+
+\end{document}

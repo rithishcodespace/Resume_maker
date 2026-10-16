@@ -2,8 +2,8 @@
 APPLICATION DOSSIER: CLOUDSEK
 ========================================
 Candidate:    Rithish S
-Role/Target:  CloudSEK - DevOps Intern
-Date:         2026-09-22 07:17:53
+Role/Target:  CloudSEK - SDE Intern - Backend
+Date:         2026-10-16 07:11:19
 Status:       PDF Compiled
 Dossier Path: dist/cloudsek/
 

@@ -25,9 +25,9 @@ APPLICATIONS_FILE = os.path.join(ROOT_DIR, "APPLICATIONS.md")
 # Registry of company application metadata
 METADATA_TITLES = {
     "cloudsek": {
-        "title": "CloudSEK - DevOps Intern",
-        "description": "DevOps internship targeting Linux, Docker, Kubernetes fundamentals, AWS, CI/CD automation, and infrastructure security.",
-        "badge": "DevOps & Cloud Infra"
+        "title": "CloudSEK - SDE Intern - Backend",
+        "description": "Backend Software Engineering internship targeting Node.js, REST APIs, distributed queues (Redis/BullMQ), databases (PostgreSQL/MySQL), cloud/Docker, and cybersecurity systems.",
+        "badge": "Backend & Distributed Systems"
     },
     "microsoft": {
         "title": "Microsoft - Software Engineering Intern",
@@ -53,6 +53,11 @@ METADATA_TITLES = {
         "title": "HackerRank - Software Development Engineer Intern",
         "description": "Software Development Engineer internship targeting developer tooling, AST static analysis, AI agents (MCP/RAG), scalable backend services, and high-standard production software engineering.",
         "badge": "Software Engineering & AI Systems"
+    },
+    "amazon": {
+        "title": "Amazon - Programmer Analyst Intern (2027)",
+        "description": "Programmer Analyst internship targeting large-scale web services, AWS (S3, DynamoDB, EC2), schedulers, workflows, state machines, internal tooling, automated testing, and cross-functional business-to-tech liaison.",
+        "badge": "Systems & Cloud Engineering"
     }
 }
 
@@ -246,6 +251,12 @@ def build_company(slug):
                 print("    [✓] COVER LETTER 1-PAGE CONSTRAINT: PASSED")
             else:
                 print(f"    [!] WARNING: Cover letter is {c_pages} page(s). Trim content to fit 1 page strictly!")
+
+    # Copy markdown documentation if present
+    for doc in ["JD_Analysis.md", "SUMMARY.md", "COVER_LETTER.md"]:
+        src_doc = os.path.join(company_dir, doc)
+        if os.path.exists(src_doc):
+            shutil.copy2(src_doc, os.path.join(out_dir, doc))
 
     # Write metadata.json
     meta = METADATA_TITLES.get(slug, {

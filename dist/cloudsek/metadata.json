@@ -1,9 +1,9 @@
 {
-  "title": "CloudSEK - DevOps Intern",
-  "description": "DevOps internship targeting Linux, Docker, Kubernetes fundamentals, AWS, CI/CD automation, and infrastructure security.",
-  "badge": "DevOps & Cloud Infra",
-  "last_built": "2026-09-22 07:17:53",
+  "title": "CloudSEK - SDE Intern - Backend",
+  "description": "Backend Software Engineering internship targeting Node.js, REST APIs, distributed queues (Redis/BullMQ), databases (PostgreSQL/MySQL), cloud/Docker, and cybersecurity systems.",
+  "badge": "Backend & Distributed Systems",
+  "last_built": "2026-10-16 07:11:19",
   "slug": "cloudsek",
-  "estimated_char_count": 2101,
+  "estimated_char_count": 2137,
   "compiled": true
 }
